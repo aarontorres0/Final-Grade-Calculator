@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var needLabel: UILabel!
     //connections to the UI layout I made ^
-    
-    
+
     //=========================================================================================
     func calculate(cG: Double, fW: Double, dG: Double) -> Double
     {
@@ -44,6 +43,7 @@ class ViewController: UIViewController {
             needLabel.text = "You will need a "+String(format: "%.2f", need)+"% on the final."
             //sets the label to a string that has what you need on the final^
             
+            
             if (need > 100.0) //if the needed grade is impossible
             {
                 self.view.backgroundColor = .red //changes bg color
@@ -55,6 +55,10 @@ class ViewController: UIViewController {
             }
             
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     override func viewDidLoad() {
