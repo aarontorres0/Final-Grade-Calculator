@@ -4,5 +4,5 @@ An iOS application where you use your current grade percentage, the percentage o
 
 # What I Learned
 
-* How to layout an app in Xcode 
-* basic Swift programming
+* How to create an app layout in Swift
+* basic Swift programming fundamentals 
